@@ -1,0 +1,22 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Mono (si algún día lo usas)
+.mono/
+
+# Importaciones
+.import/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Vídeos
+videos/
+
+# Temporales
+*.tmp
