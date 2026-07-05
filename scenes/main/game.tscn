@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://sq2c72dx6rxg"]
+
+[ext_resource type="PackedScene" uid="uid://24fqdsi6k1of" path="res://scenes/ui/ui.tscn" id="1_e64el"]
+
+[node name="Game" type="Node" unique_id=1976192267]
+
+[node name="World" type="Node2D" parent="." unique_id=742146683]
+
+[node name="UI" parent="." unique_id=1466191548 instance=ExtResource("1_e64el")]
+
+[node name="Managers" type="Node" parent="." unique_id=632650624]

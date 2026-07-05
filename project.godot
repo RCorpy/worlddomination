@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="world domination"
+config/name="Green Tide"
+run/main_scene="uid://sq2c72dx6rxg"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
