@@ -1,7 +1,36 @@
 [gd_scene format=3 uid="uid://24fqdsi6k1of"]
 
+[ext_resource type="Script" uid="uid://cl485fc7wmlv" path="res://scripts/ui/ui.gd" id="1_u7n8c"]
+
 [node name="UI" type="Control" unique_id=1466191548]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u7n8c")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1725903591]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=390344490]
+layout_mode = 2
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=997384975]
+layout_mode = 2
+text = "GREEN TIDE"
+
+[node name="InfluenceLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2115940235]
+layout_mode = 2
+text = "Goblin Influence: 0"
+
+[node name="SendGoblinButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=613643490]
+layout_mode = 2
+text = "Send Goblin"
