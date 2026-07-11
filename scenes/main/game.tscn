@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://b5wgdo5jngpt8" path="res://scripts/game.gd" id="1_e3dby"]
 [ext_resource type="PackedScene" uid="uid://24fqdsi6k1of" path="res://scenes/ui/ui.tscn" id="1_e64el"]
 [ext_resource type="Script" uid="uid://dhoi05g5r6gky" path="res://scripts/managers/resource_manager.gd" id="2_ma5rq"]
+[ext_resource type="Script" uid="uid://ovasohhnunwa" path="res://scripts/managers/production_calculator.gd" id="4_gsayk"]
+[ext_resource type="Script" uid="uid://b8yq0quvvvyrp" path="res://scripts/managers/run_manager.gd" id="5_gf1f2"]
 
 [node name="Game" type="Node" unique_id=1976192267]
 script = ExtResource("1_e3dby")
@@ -12,6 +14,16 @@ script = ExtResource("1_e3dby")
 [node name="UI" parent="." unique_id=1466191548 instance=ExtResource("1_e64el")]
 
 [node name="Managers" type="Node" parent="." unique_id=632650624]
+script = ExtResource("2_ma5rq")
 
 [node name="ResourceManager" type="Node" parent="Managers" unique_id=1820563709]
 script = ExtResource("2_ma5rq")
+
+[node name="ProductionCalculator" type="Node" parent="Managers" unique_id=452499872]
+script = ExtResource("4_gsayk")
+
+[node name="RunManager" type="Node" parent="Managers" unique_id=1687382850]
+script = ExtResource("5_gf1f2")
+
+[node name="Timer" type="Timer" parent="Managers/RunManager" unique_id=706786594]
+autostart = true

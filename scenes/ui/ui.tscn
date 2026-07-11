@@ -27,9 +27,13 @@ alignment = 1
 layout_mode = 2
 text = "GREEN TIDE"
 
+[node name="GoblinsLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1933237268]
+layout_mode = 2
+text = "Goblins: 0"
+
 [node name="InfluenceLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2115940235]
 layout_mode = 2
-text = "Goblin Influence: 0"
+text = "Influence: 0"
 
 [node name="SendGoblinButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=613643490]
 layout_mode = 2
