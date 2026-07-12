@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://ym4lx0hd5w42"]
+
+[ext_resource type="Script" uid="uid://dgfivywcrcd5i" path="res://scripts/data/modifier.gd" id="1_jdpm0"]
+[ext_resource type="Script" uid="uid://dbhugo3wjl3hm" path="res://scripts/data/upgrade.gd" id="2_2ebpt"]
+
+[sub_resource type="Resource" id="Resource_24jx7"]
+script = ExtResource("1_jdpm0")
+effect = 2
+value = 1.0
+metadata/_custom_type_script = "uid://dgfivywcrcd5i"
+
+[resource]
+script = ExtResource("2_2ebpt")
+id = "1"
+title = "better goblins"
+description = "a little more sofisticated"
+price = 10
+modifiers = Array[ExtResource("1_jdpm0")]([SubResource("Resource_24jx7")])
+metadata/_custom_type_script = "uid://dbhugo3wjl3hm"

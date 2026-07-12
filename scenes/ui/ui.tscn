@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://24fqdsi6k1of"]
 
 [ext_resource type="Script" uid="uid://cl485fc7wmlv" path="res://scripts/ui/ui.gd" id="1_u7n8c"]
+[ext_resource type="PackedScene" uid="uid://dsk4olg6wkedl" path="res://scenes/ui/upgrade_item.tscn" id="2_f5cxw"]
 
 [node name="UI" type="Control" unique_id=1466191548]
 layout_mode = 3
@@ -10,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_u7n8c")
+upgrade_item_scene = ExtResource("2_f5cxw")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1725903591]
 layout_mode = 1

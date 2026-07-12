@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dsk4olg6wkedl"]
+
+[ext_resource type="Script" uid="uid://eofngladbper" path="res://scripts/ui/upgrade_item.gd" id="1_sdq3q"]
+
+[node name="UpgradeItem" type="VBoxContainer" unique_id=1155806171]
+script = ExtResource("1_sdq3q")
+
+[node name="UpgradeTitle" type="Label" parent="." unique_id=888769733]
+layout_mode = 2
+text = "Better Goblins"
+
+[node name="UpgradePrice" type="Label" parent="." unique_id=1046607326]
+layout_mode = 2
+text = "Price: 10"
+
+[node name="UpgradeButton" type="Button" parent="." unique_id=281777195]
+layout_mode = 2
+text = "Buy
+"

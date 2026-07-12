@@ -5,6 +5,9 @@
 [ext_resource type="Script" uid="uid://dhoi05g5r6gky" path="res://scripts/managers/resource_manager.gd" id="2_ma5rq"]
 [ext_resource type="Script" uid="uid://ovasohhnunwa" path="res://scripts/managers/production_calculator.gd" id="4_gsayk"]
 [ext_resource type="Script" uid="uid://b8yq0quvvvyrp" path="res://scripts/managers/run_manager.gd" id="5_gf1f2"]
+[ext_resource type="Script" uid="uid://dv1hrattdgskp" path="res://scripts/managers/upgrade_manager.gd" id="6_em1bs"]
+[ext_resource type="Script" uid="uid://dbhugo3wjl3hm" path="res://scripts/data/upgrade.gd" id="7_kjrfb"]
+[ext_resource type="Resource" uid="uid://ym4lx0hd5w42" path="res://resources/game_data/incursion_upgrades/better_goblins.tres" id="8_se30j"]
 
 [node name="Game" type="Node" unique_id=1976192267]
 script = ExtResource("1_e3dby")
@@ -27,3 +30,7 @@ script = ExtResource("5_gf1f2")
 
 [node name="Timer" type="Timer" parent="Managers/RunManager" unique_id=706786594]
 autostart = true
+
+[node name="UpgradeManager" type="Node" parent="Managers" unique_id=1041499090]
+script = ExtResource("6_em1bs")
+available_upgrades = Array[ExtResource("7_kjrfb")]([ExtResource("8_se30j")])
