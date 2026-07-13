@@ -5,6 +5,6 @@ extends Resource
 @export var title: String
 @export_multiline var description: String
 
-@export var price: int = 0
+@export var base_price: int = 0
 
 @export var modifiers: Array[Modifier]

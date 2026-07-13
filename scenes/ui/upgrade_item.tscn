@@ -9,6 +9,10 @@ script = ExtResource("1_sdq3q")
 layout_mode = 2
 text = "Better Goblins"
 
+[node name="LevelLabel" type="Label" parent="." unique_id=1286245353]
+layout_mode = 2
+text = "Level: 0"
+
 [node name="UpgradePrice" type="Label" parent="." unique_id=1046607326]
 layout_mode = 2
 text = "Price: 10"

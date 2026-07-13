@@ -34,9 +34,10 @@ func _on_send_goblin_pressed() -> void:
 
 func _on_buy_upgrade_pressed(upgrade: Upgrade):
 	
-	if !resource_manager.spend_influence(upgrade.price):
+	var price = upgrade_manager.get_upgrade_price(upgrade)
+	if !resource_manager.spend_influence(price):
 		return
 
 	upgrade_manager.buy_upgrade(upgrade)
-
 	production_calculator.recalculate()
+	ui.refresh_upgrade(upgrade,	upgrade_manager.get_upgrade_level(upgrade),	upgrade_manager.get_upgrade_price(upgrade))

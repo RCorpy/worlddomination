@@ -34,3 +34,6 @@ func create_upgrades(upgrades: Array[Upgrade]):
 		item.setup(upgrade)
 		item.buy_pressed.connect(_on_upgrade_pressed)
 		
+func refresh_upgrade(upgrade: Upgrade, level: int, price: int) -> void:
+	var upgrade_item = $MarginContainer/VBoxContainer.get_children()[4]
+	upgrade_item.refresh(level, price)
